@@ -1,0 +1,35 @@
+"ls" is a command that means list directory contents.
+"ls Music Movies Applications" means list directory contents for these 3 directories.
+"ls -lh Downloads/*jpg" means list directory contents (but in a list and human readable), for jpg files inside the "Downloads" directory with any name.
+
+"-l" is a parameter to display the contents in a list.
+"-a" is a parameter to display the contents including the hidden directories.
+"-h" is a parameter to display the contents in a human-readable format.
+E.g.: Without "-h" the size will be 911012 (bytes) instead of 911k (kilobytes), which is easier to understand.
+
+"*" is a wildcard that means any possible names.
+
+What are the differences between "ls /Applications" and "ls Applications"?
+- The first command with a forward slash actually points to the root of the computer.
+- The second command with no forward slash points to the current directory.
+
+What are the differences between "ls "c:\program files"" and "ls c:\program files"?
+- The double quotes allow names with spaces to be used.
+- The first command tries to list contents inside the "c:\program files" directory.
+- The second command tries to list contents inside "c:\program" and "files" directories.
+
+"echo" is a command that means write a message in the shell.
+"echo "My home directory is at: $HOME"" writes a line of text like:
+    My home directory is at: /c/Users/kean
+
+The "$" (dollar symbol) notation is used to indicate a variable.
+"$HOME" is a built-in variable that holds the current user's home directory.
+
+"cd" is a command that means change directory.
+"cd ~" means go back to the current user home directory.
+"cd -" means go back to the previous directory.
+
+"start" or "open" is the command to open a file or a directory.
+"open" is for MacOS, "start" is for Windows, "xdg-open" is for Linux.
+
+"pwd" is a command that means print working directory.

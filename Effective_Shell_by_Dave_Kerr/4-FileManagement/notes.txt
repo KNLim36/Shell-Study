@@ -1,0 +1,23 @@
+"wget" is a command that means web get.
+"wget" accepts a web address and download into the current directory.
+
+"-O" is a parameter to indicate where to put the output, and what will be its new name.
+E.g.: wget -O ~/playground.zip https://effective-shell.com/downloads/effective-shell-samples.zip
+
+"unzip" is a command to extract a file from a zip file.
+
+"rm" is a command that means deleting a file permanently, very risky.
+"rm" will not delete a directory, luckily.
+
+"-r" flag means recursive.
+If "rm" is followed by a "-r" flag, it deletes everything in the directory as well as the directory itself.
+
+"tree" is a command that shows the contents of a directory.
+"tree" is not installed by default on all systems.
+
+"file" is a command that shows the details of a particular file, works out-of-the-box in Windows.
+
+"cp" is a command that means copy.
+
+"mv" is a command that means move. It allows the movement of files and also the rename of files.
+"mv pictures/loas-gch-copy.JPG pictures/loas-gch-copy.jpeg" means changing the "loas-gch-copy.JPG" file into "loas-gch-copy.jpeg", changing its format in the process.

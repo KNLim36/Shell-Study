@@ -1,0 +1,35 @@
+"$PWD" is also a variable that holds the current working directory.
+
+"echo "My current working directory is: $PWD"" writes the line below:
+My current working directory is: C:\Users\kean\Documents\GitHub\Shell-Study
+
+In a shell script, the "#" notation is used to write comments.
+
+Paths are addresses of files and directories.
+
+There are 2 types of paths - absolute paths and relative paths.
+
+Absolute path gives the exact location. It always starts with a forward-slash "/".
+Relative path gives the relative position to the current working directory.
+
+".." in a directory means the parent of the directory.
+"." in a directory means the directory itself.
+
+Both ".." and ".' exist for all directories in the system.
+
+"cp . /backup" means copy everything in the current directory into a directory named "backup".
+
+The home directory can be accessed with the tilde character (~).
+"$HOME" points to the home directory too.
+
+To quickly navigate from 1 directory to another and return, "pushd" and "popd" are used.
+    "pushd ~/Downloads"
+    "ls"
+    "popd"
+
+When "pushd" is invoked, the target directory is pushed onto a stack and the user moves into it.
+When "popd" is invoked after a "pushd", the latest directory is popped off and the user returns to the origin directory.
+
+Multiple "pushd"s can be used to quickly navigate to different directories, and consecutive "popd"s allow the user to return back to the original directory.
+
+"cd -" also allows the user to go back to the previous directory, but it can be used only once.

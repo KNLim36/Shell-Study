@@ -1,0 +1,34 @@
+The shell is an command-line interface to work with computers.
+There are times when working in the shell is much more productive than working with GUI.
+We can create shell scripts to automate frequently-used shell programs.
+
+List of names for shell on:
+- Microsoft Windows: Command Prompt, PowerShell
+- Apple MacOS: Terminal
+- Linux/Unix, Ubuntu: Bash
+
+There are 3 ways to use shell on Windows:
+- Use a tool which provides common Linux tools which have been written to work with Windows
+- Use a "virtual machine" running Linux
+- Use the Windows Subsystem for Linux
+
+To replicate the feeling of using Linux on Windows, Cygwin can be used.
+
+Oracle VirtualBox can be used to install Ubuntu which is one popular distribution of Linux.
+
+Windows users can enable Windows Subsystem Linux to work with Linux-like shell.
+First we turn on the feature in "Turn Windows Features on or off", after we restart, we can find Ubuntu in Windows App Store.
+
+MacOS users might want to install Bash even though it is installed by default because the version might be out-of-date.
+To install Bash, we can use Homebrew, a package manager for MacOS.
+
+To check the Bash version installed on your machine, we can use "bash --version" without double-quotes.
+
+"bash" is a command.
+"--version" is a parameter.
+"-lh" is a flag, another kind of parameter.
+
+Parameters change how commands work.
+
+What are the differences between parameters and flags?
+- Most internet search results indicate that it is opinion-based.

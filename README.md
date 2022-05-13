@@ -1,2 +1,2 @@
 # Shell-Study
-This repository keeps my notes on Shell
+This repository keeps my study notes on Shell.

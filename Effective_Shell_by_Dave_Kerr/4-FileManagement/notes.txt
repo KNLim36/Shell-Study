@@ -21,3 +21,20 @@ If "rm" is followed by a "-r" flag, it deletes everything in the directory as we
 
 "mv" is a command that means move. It allows the movement of files and also the rename of files.
 "mv pictures/loas-gch-copy.JPG pictures/loas-gch-copy.jpeg" means changing the "loas-gch-copy.JPG" file into "loas-gch-copy.jpeg", changing its format in the process.
+
+"mkdir" is a command that means create directory.
+"mkdir 2019/outdoors/pictures" will fail because the "2019" and "2019/outdoors" directories are non-existent.
+"mkdir -p 2019/outdoors/pictures" will work because the "-p" flag means "make the parent directory if it doesn't already exist".
+
+"rmdir" is a command that means deleting a directory.
+"rmdir" doesn't delete directories with files in them. 
+
+"cat" concatenates files and writes the output to the screen.
+"cat ursula-le-guin.txt" writes output for 1 file.
+"cat quotes/*" writes output for all files in the quotes directory.
+
+"cat quotes/* > quotes/all-quotes.txt" first concatenates all files in the quotes directory, then redirects the output into a file called "all-quotes.txt"
+">" is a redirect operator, it tells the shell not to write to the screen, but a file instead.
+
+"zip" creates a zipped file from a directory.
+"zip -r 2019-outdoor-pictures.zip 2019" means zipping the "2019" directory and everything inside it to a zipped file named "2019-outdoor-pictures.zip".

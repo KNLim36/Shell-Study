@@ -1,0 +1,7 @@
+"Cut" is Ctrl + X
+"Copy" is Ctrl + C
+"Paste" is Ctrl + V
+
+These 3 clipboard shortcuts don't work in shell.
+Instead of performing a paste when Ctrl + V are pressed in the shell, we get "^V" instead.
+What is "^V"? 

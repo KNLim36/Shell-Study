@@ -1,9 +1,13 @@
 {
     "cSpell.words": [
         "Cygwin",
+        "groff",
         "loas",
         "mkdir",
+        "pbcopy",
+        "pbpaste",
         "popd",
-        "pushd"
+        "pushd",
+        "tldr"
     ]
 }

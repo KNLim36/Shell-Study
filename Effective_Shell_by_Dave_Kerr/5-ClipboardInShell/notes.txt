@@ -4,4 +4,45 @@
 
 These 3 clipboard shortcuts don't work in shell.
 Instead of performing a paste when Ctrl + V are pressed in the shell, we get "^V" instead.
-What is "^V"? 
+
+What is "^V"? It means Ctrl + V.
+
+Ctrl is called a control key because it was used to send control sequences to the computer.
+Control sequences are used to tell the computer to perform specific actions.
+
+Ctrl + P prints a file.
+Ctrl + C terminates the current program.
+Ctrl + V tells the shell to write out the next keystroke you give it.
+
+So if you type Ctrl + V twice, you will see 1 "^V" output.
+
+On a Windows machine, you can allow Ctrl + Shift + C/V as Copy/Paste options from bash.exe properties menu.
+
+"alias pbcopy='clip.exe'" (This is a command that binds the clip.exe operation to a command named "pbcopy".)
+"alias pbpaste="powershell.exe -command 'Get-Clipboard' | tr -d '\r' | head -n -1"" (This is another command that binds a bunch of commands into the "pbpaste" command.)
+
+These alias instructions have to be repeated when we re-open the terminal. There is a way to make them permanent though.
+
+"cat ~/effective-shell/text/simpsons-characters.txt | pbcopy" allows us to concatenate a bunch of texts and put them into the user's clipboard.
+
+"|" is the pipe operator. It tells the shell to take the output from the command on the left and send it straight to the input of the program on the right.
+
+Have you ever wanted to copy something from websites but without its formatting?
+You can do "pbpaste | pbcopy" and all is well.
+
+Because we can pipe the contents of the clipboard to other programs, we can easily use huge number of tools to work with text.
+"cat ~/effective-shell/text/simpsons-characters.txt | sort | pbcopy" (This allows us to grab all texts in simpsons-characters.txt, sort them and copy them to the clipboard.)
+
+Imagine we have a list of contact names that are horribly formatted, out of sequence and full of duplicates. We have to send out emails to all of them by also adding an email address to each name.
+
+The answer: "pbpaste | sort | uniq | tr ' ' '_' | sed 's/$/@simpsons.com' | pbcopy"
+
+What does this command do?
+    1) Paste the currently copied contact name lists. (pbpaste)
+    2) Sort the names alphabetically. (sort)
+    3) Remove duplicate names. (uniq)
+    4) Replace spaces with underscores. (tr ' ' '_')
+    5) Add email domain to the end of each row. (sed 's/$/@simpsons.com')
+    6) Copy the processed names to the clipboard (pbcopy)
+
+"cat /dev/clipboard" shows what is currently kept in the clipboard.

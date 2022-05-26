@@ -1,0 +1,53 @@
+Shell commands are complicated, but there are built-in explanations and manuals within shell.
+
+"man" allows us to access the manual for a certain command.
+
+"man cp" displays the manual for the copy command.
+
+Bash on Windows might not have the "man" command. 
+In this case we can use "<command> --help" command instead.
+
+We can use arrow keys to scroll up and down through text contents in shell when the information is presented in the shell pager.
+
+On most systems, the pager will be the "less" program. There are lots of commands you can use to navigate through files with "less", but the bare essentials are:
+    d - Scroll down half a page
+    u - Scroll up half a page
+    j / k - Scroll down or up a line. You can also use the arrow keys for this
+    q - Quit
+    /<search> - Search for text
+    n - When searching, find the next occurrence
+    N - When searching, find the previous occurrence
+
+To open a file with "less", use "less /usr/share/common-licenses/GPL-3".
+
+We can use "echo $PAGER" to check the pager type.
+
+These are manual sections for the shell:
+    Section 1 - Executable programs or shell commands
+    Section 2 - System calls (functions provided by the kernel)
+    Section 3 - Library calls (functions within program libraries)
+    Section 4 - Special files (usually found in /dev)
+    Section 5 - File formats and conventions (e.g. /etc/passwd)
+    Section 6 - Games
+    Section 7 - Miscellaneous (including macro packages and conventions), e.g. man(7), groff(7)
+    Section 8 - System administration commands (usually only for root)
+    Section 9 - Kernel routines (Non standard)
+
+Section 1 contains common shell programs and commands.
+Section 2 contains systems function calls. (Things like the command to change file ownership.)
+Section 3 contains library calls. (Useful to write programs to run on the system.)
+Section 4 contains device that lives in the "/dev/*" folder.
+Section 5 contains the details for special files in the system.
+Section 6 contains silly fun games in shell.
+Section 7 contains miscellaneous documentations.
+Section 8 contains system commands.
+
+"man time" and "man time(3)" yield different results.
+
+"man time" finds the manual for the first "time" entry in the manual, which probably means the time in section 1.
+"man time(3)" finds the manual for the "time" command in the library calls section.
+
+Bash on Windows does not have the "tldr" command too. (It is the short form of "too long didn't read")
+We can install it with "npm install -g tldr".
+
+A good website for shell cheat sheet is www.cheat.sh

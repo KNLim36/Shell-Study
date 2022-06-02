@@ -1,0 +1,16 @@
+DevOps are ubiquitous these days.
+
+In attempting to unify the goals of development and operation of software, DevOps represents an organizational and cultural change. 
+Rather than having one group focus on feature development and another group focus on reliable software operations, a single group is responsible for both. 
+The theory is that this encourages software engineers to also consider security, reliability, maintainability etc, and operators to also consider speed of delivery.
+
+For DevOps to work well, automation is needed.
+Examples: automated deployments, automated testing, automated failover, automated alerts.
+
+The world of automation is intimately linked to the world of shell and shell scripting.
+Shell scripts can be used to automate many operations when triggered.
+
+Many aspects of modern architecture (cloud environments) support provisioning and management of services via scripting.
+Services that do not support shell scripting are at risk of becoming obsolete.
+
+Operations engineers will have to learn shell scripting to program automated routines to manage high availability and so on.

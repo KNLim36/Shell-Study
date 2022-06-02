@@ -1,0 +1,13 @@
+Even though we see proliferation of programming languages and tools in recent years, in many ways the operating platforms have been slowly becoming homogenous.
+
+In the beginning each operating systems were highly diverse, proprietary, closed-source and specialized.
+
+The modern execution environment is fairly uniform, and most of the time it is a Linux-like system.
+
+More and more enterprise users moved away from proprietary Unix platforms to open-source Linux distributions for platforms (presumably to ensure support).
+
+Even Windows start allowing Linux-like operations with its introduction to Windows Subsystems for Linux.
+
+The rapid adoption of Docker as a common container technology introduced more engineers to operating environments that are like Linux.
+
+To work with Docker and Kubernetes, shell skills are critical.

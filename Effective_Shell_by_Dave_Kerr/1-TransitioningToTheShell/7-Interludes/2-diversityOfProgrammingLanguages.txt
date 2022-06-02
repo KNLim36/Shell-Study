@@ -1,15 +1,3 @@
-Why is the shell experiencing something of a renaissance in the modern age of IT.
-
-It is actually not confirmed in anyway, but there are observations that point to the increased popularity of shell.
-Observations like:
-    - Stack Overflow tag popularity.
-    - LinkedIn desired skill sets. 
-
-Three specific developments in technology:
-    - Diversity of programming languages.
-    - Convergence of operating systems.
-    - DevOps.
-
 With the advent of the internet, programming has transformed from a high entry barrier endeavor to be universally approachable.
 Because the people that are during programming are diverse, programming languages have evolved from their diverse needs.
 Whereas previously there were only a small number of general-purpose languages and a large number of specialized languages.
@@ -36,5 +24,10 @@ Fast forward to recent times, the top ten languages (compiled by Stack Overflow 
 Some languages like Swift, Dart, Ruby, Haskell, Scala closely follow this list too.
 
 For the aged server side languages like Java, C, C++, C#, the development tools are powerful, all-encompassing and mature (some might say bloated).
+Examples are: Eclipse IDE for Java, Visual Studio for Windows (C, C++, C#).
 
 For the newer server side languages like JavaScript, Golang, Rust, and Python, the environment is just the shell.
+For modern programming languages, users often have had to rely on the shell to compile, transpile, manage packages, bundle and so on.
+Examples: managing Python virtual environments, running Node.js, installing packages for Golang etc.
+
+Exactly because developers were exposed to the capabilities of the shell (whether of their own volition or not), they began to realize how powerful and efficient during work.

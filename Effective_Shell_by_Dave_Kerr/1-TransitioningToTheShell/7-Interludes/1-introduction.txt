@@ -1,0 +1,11 @@
+Why is the shell experiencing something of a renaissance in the modern age of IT.
+
+It is actually not confirmed in anyway, but there are observations that point to the increased popularity of shell.
+Observations like:
+    - Stack Overflow tag popularity.
+    - LinkedIn desired skill sets. 
+
+Three specific developments in technology:
+    - Diversity of programming languages.
+    - Convergence of operating systems.
+    - DevOps.

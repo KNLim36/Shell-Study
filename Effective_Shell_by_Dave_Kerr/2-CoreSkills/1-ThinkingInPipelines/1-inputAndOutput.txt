@@ -1,0 +1,16 @@
+The understanding of how input and output work together for command line programs is critical to use shell effectively.
+
+Many of the programs follow a pattern:
+    Input   --> |Program|   --> Output
+
+Take "sort" for example:
+    Dog                     Cat              
+    Mouse   --> |Sort|  --> Dog
+    Cat                     Mouse
+
+Ctrl + D is a special control character which means 'end of transmission'
+
+To manually type in things for "sort", we can use the "sort" command with no parameter.
+Then we can type something in, press "Enter" to go to next line, then repeat until we are satisfied.
+When we're done, we press Ctrl + D to tell the shell we've finished.
+Immediately we'll get the sorted results.

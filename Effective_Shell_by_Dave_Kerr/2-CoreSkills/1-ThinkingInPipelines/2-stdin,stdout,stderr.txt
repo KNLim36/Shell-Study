@@ -1,0 +1,2 @@
+In our previous example, "sort" was actually using stdin and stdout, what are they?
+
